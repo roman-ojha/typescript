@@ -1,0 +1,12 @@
+-> here we had added the html and css for the tutorial project
+-> To Compile Typescript to javascript Run:
+    -> tsc sandbox.ts sandbox.js
+        -> tsc (Typescript Compile)
+        -> sandbox.tx (from)
+        -> sandbox.js (to)
+    -> but if we want to compile Typescript having same file name as javascript file name then we can just run:
+        -> tsc sandbox.ts
+
+    -> right now we have to recompile code again and again when we change our .ts file, so now run:
+        -> tsc sandbox.ts -w
+            -> -w (watch flag)
