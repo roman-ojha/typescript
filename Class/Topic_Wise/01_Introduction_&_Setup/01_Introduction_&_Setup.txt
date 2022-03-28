@@ -1,0 +1,11 @@
+*) What is TypeScript?
+    -> Alternative to Javascript(superset)
+    -> Allows us to use strict types
+    -> Supports modern features(arrow function,let, const)
+    -> Extra feature(generics, interfaces, tuples etc)
+    -> we write code on TypeScript but it will compile down to javascript to understand by browser
+    -> Javascript is a dynamic types language which leads application to have much more error because the type of that variable could change on the runtime
+
+*) Setup:
+    -> need to install nodeJS
+    -> npm install -g typescript
