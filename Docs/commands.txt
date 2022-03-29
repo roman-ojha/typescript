@@ -1,0 +1,5 @@
+-> tsc <file_name_to_compile> <compiled_js_file_name>
+-> tsc <file_name_to_compile>
+-> tsc <file_name_to_compile> -w (-w: watch flag)
+-> tsc --init (to initializing tsconfig.json file)
+-> tsc -w (after tsconfig)
