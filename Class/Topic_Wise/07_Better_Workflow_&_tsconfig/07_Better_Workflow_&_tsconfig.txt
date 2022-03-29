@@ -1,0 +1,22 @@
+-> right now we are just making one file and write all the code on that file but on the case when you are making project there will be of several file and could have different folder and structure of folder where you will write the typescript code in that case you have to mange you project using ts config file. so, run:
+    -> tsc --init
+        -> inside the tsconfig.json file there would be lot's of config stuff but right now we are concern about:
+        -> {
+            "compilerOptions": {
+                "rootDir": "./src",   // where the root .ts file exist
+                "outDir": "./public", // where the compilation .js file exist
+            }
+        }
+    -> now to compile we can just run on tsconfig directory:
+        -> tsc
+        -> tsc -w
+    -> so now all the the folder inside the './src' will be compile and created on './public' folder
+    -> but if we will create '.ts' file outside of the './src' folder it will also compile and store onto './public' folder in that case we have to config :
+        -> {
+            "compilerOptions": {
+            },
+            "include": ["src"]
+        }
+            -> it means that we just want to compile those '.ts' file which are inside the './src' folder
+
+-> Learn More about tsconfig.json: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
