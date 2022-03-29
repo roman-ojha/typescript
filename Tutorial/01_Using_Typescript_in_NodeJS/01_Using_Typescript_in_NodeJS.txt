@@ -49,3 +49,6 @@
     -> in vs code:
         -> press 'f1'
         -> write: Typescript: Restart Ts server
+
+
+*) if you want to know some type information about some variable, function, etc. at that time in vsCode right click while putting cursor on that variable and 'go to type definition'
