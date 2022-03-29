@@ -1,0 +1,51 @@
+*) Setup
+    -> npm init -y
+    -> yarn add -D typescript
+    -> npx tsc --init
+    -> inside package.json file:
+        -> "scripts": {
+        "build": "tsc"
+    },
+        -> yarn build
+        -> after you compile you code to run it you can use:
+            -> node src/index.js
+                -> this is kind of annoying to use in development so we can use
+                    -> yarn add -D ts-node 
+                    ->  "scripts": {
+                                "start": "ts-node src/index.ts"
+                        },
+                        -> what this will going to do is point it at typescript file it's gonna run it and it's gonna compile it and run it with node for us
+        -> if you are making constantly making some change on code that 
+            -> yarn add -D ts-node-dev
+                -> "scripts": {
+                        "start": "ts-node-dev --respawn src/index.ts"
+                    },
+                -> it's basically gonna watch our files and whenever we make a change is going to restart the server
+        -> you can also do this using nodemon
+            -> yarn add -D nodemon
+                -> "scripts": {
+                        "dev": "nodemon --exec ts-node src/index.ts"
+                    },
+
+*) Interact with other library:
+    -> if we want to use 'express' package
+        -> yarn add express
+            -> so this is the javascript library
+            -> so i want to be able to know the type definition of that library
+                -> yarn add -D @types/express
+    -> type definition for nodejs package
+        -> yarn add -D @types/node
+
+    -> what if package don't have type definition package:
+        -> EX: let's say package 'shortid' don't have type definition
+            -> yarn add shortid
+        -> to solve that problem what we can do is:
+            -> create folder name called './src/@types'
+            -> create file called 'shortid.d.ts' write:
+                -> declare module "shortid";
+                    -> so here we are declaring this can be of any type
+
+*) if typescript is just throwing error without any error then:
+    -> in vs code:
+        -> press 'f1'
+        -> write: Typescript: Restart Ts server
