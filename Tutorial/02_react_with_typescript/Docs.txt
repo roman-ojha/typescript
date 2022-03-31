@@ -1,0 +1,3 @@
+npx create-react-app --template typescript 02_react_with_typescript
+
+-> NOTE: to use typescript in react app we must provide '.tsx' extension for every file/components
