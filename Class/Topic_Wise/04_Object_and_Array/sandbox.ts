@@ -42,3 +42,11 @@ ninja = {
   age: 40,
 };
 // but we can change the object with have the same property
+
+// To define Array of An object:
+let userTestStatus: { id: number; name: string }[] = [
+  { id: 0, name: "Available" },
+  { id: 1, name: "Ready" },
+  { id: 2, name: "Started" },
+];
+userTestStatus[1].name;
