@@ -48,6 +48,7 @@ function withEmploymentDate<T extends { new (...args: any[]): {} }>(
     employmentDate = new Date().toISOString();
     constructor(...args: any[]) {
       // and passing all the argument to the super class which implement this 'withEmploymentDate' decorator
+      // 'args' is an arguments that is required by the 'constructor' method
       super(...args);
       console.log("Adding employment date to " + baseClass.name);
     }
