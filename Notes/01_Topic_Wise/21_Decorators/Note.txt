@@ -1,0 +1,13 @@
+*) Docs: https://www.typescriptlang.org/docs/handbook/decorators.html
+
+*) Steps:
+    -> Enable 'experimentalDecorators' on tsconfig.json:
+        {
+          "compilerOptions": {
+            "target": "ES5",
+            "experimentalDecorators": true
+          }
+        }
+    -> If you enable 'experimentalDecorators' to true it means that we are using the old version stage 2 decorators
+    -> If you enable 'experimentalDecorators' to false it means that we are using the new version stage 3 decorators
+    -> If we will not add 'experimentalDecorators' on our 'tsconfig' file then it assume that we are using stage 3 new version of decorator
