@@ -50,3 +50,11 @@ let userTestStatus: { id: number; name: string }[] = [
   { id: 2, name: "Started" },
 ];
 userTestStatus[1].name;
+
+// Defines the type of key:value pair of an object
+const obj: { [key: string]: Function } = {
+  // Now this object only accept the object type having key as string and value as Function
+  add: function (a: number, b: number) {
+    return a + b;
+  },
+};
